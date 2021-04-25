@@ -4,7 +4,6 @@ title = "Łukasz Żarnowiecki"
 theme = "hugo-theme-console"
 
 [params]
-animateStyle = "animated zoomIn fast"
 description = "Personal blog"
 
 # https://utteranc.es
@@ -14,17 +13,9 @@ issueTerm = "url"
 theme = "preferred-color-scheme"
 
 [[params.navlinks]]
-name = "GitHub/"
-url = "https://github.com/dolohow"
-
-[[params.navlinks]]
-name = "Twitter/"
-url = "https://twitter.com/puksiarz"
+name = "Hire Me/"
+url = "hire-me/"
 
 [[params.navlinks]]
 name = "About/"
 url = "about/"
-
-[[params.navlinks]]
-name = "Contact/"
-url = "contact/"
