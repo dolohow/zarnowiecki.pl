@@ -3,7 +3,6 @@ title: "Web Scraping with Scrapy"
 date: 2021-05-06T13:53:07+02:00
 summary: "There are many ways to get data out of websites, but _Scrapy_
           is my favourite."
-draft: true
 ---
 ## Abstract
 There are many ways you can get data out of websites. This is called web

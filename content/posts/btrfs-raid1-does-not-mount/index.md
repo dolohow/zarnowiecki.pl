@@ -4,7 +4,6 @@ date: 2021-08-18T10:55:46+02:00
 summary: This could happen since there is a new sanity check in newer
          kernel.  Error message is _device total_bytes should be at
          most 6000606183424 but found 6001175126016_
-draft: true
 ---
 
 ## Situation
@@ -77,7 +76,7 @@ operations and I do not want to risk data inconsistency.
 mkdir /mnt/new_disk
 mount /dev/sdc /mnt/new_disk
 btrfs subvolume snapshot -r <mountpoint> <mountpoint>/ss
-rsync -aAXHSv --info=progress2 --delete <mountpoint>/ss /mnt/new_disk
+rsync -aAXHSv --info=progress2 --delete <mountpoint>/ss/ /mnt/new_disk
 ```
 
 Now I can remove snapshot, stop services and do last sync that suppose
