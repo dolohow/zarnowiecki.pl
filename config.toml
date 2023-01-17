@@ -13,6 +13,10 @@ issueTerm = "url"
 theme = "preferred-color-scheme"
 
 [[params.navlinks]]
+name = "CV/"
+url = "cv/"
+
+[[params.navlinks]]
 name = "Hire Me/"
 url = "hire-me/"
 
