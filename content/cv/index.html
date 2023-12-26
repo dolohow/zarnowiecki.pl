@@ -1,234 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Łukasz Żarnowiecki - Curriculum Vitae</title>
+  <style>
+  body {
+    /* font-family: Arial, sans-serif; */
+    font-family: monospace;
+    margin: 20px;
+    line-height: 1.5;
+  }
 
-<style>
-.title {
+  header {
     display: flex;
-    /* align-items: center; */
-}
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-.year {
-    min-width: 150px;
-    max-width: 150px;
-}
-.item {
-    display: flex;
-    padding-top: 20px;
-}
-ul {
+  h1 {
+    /* color: #333; */
+    color: #33a1de;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-info a {
+    margin-right: 10px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    /* color: #555; */
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
     margin: 0;
-}
-.footer-cv { 
-    margin-top: 100px;
+    padding: 0;
+  }
+
+  li {
+    page-break-inside: avoid;
+    margin-bottom: 5px;
+  }
+
+  footer {
     font-size: 0.75em;
-}
-.left {
-    min-width: 40%;
-    max-width: 40%;
-    font-size: 2em;
-    font-weight: 500;
-}
-.profile {
-    max-width: 200px;
-}
-.right {
-    color: grey;
-    display: flex;
-}
-.next-to-profile > p {
-    margin: 0 20px;
-    padding-top: 3px;
-    text-align: right;
-}
+  }
 
-</style>
+  .no-page-break {
+  }
 
-<div>
-    <div class="title">
-        <div class="left">
-            Łukasz Żarnowiecki
-        </div>
-        <div class="right">
-            <div class="next-to-profile">
-                <p><svg style="width: 20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-1om0hkc" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LocalPhoneIcon"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>+48 787 306 247</p>
-                <p><svg style="width: 20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-1om0hkc" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="EmailIcon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg>lukasz@zarnowiecki.pl</p>
-                <p><a href="https://www.linkedin.com/in/dolohow/"><svg style="width: 20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-1om0hkc" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LinkedInIcon"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg>dolohow</a></p>
-                <p><a href="https://github.com/dolohow"><svg style="width: 20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-1om0hkc" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GitHubIcon"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg>dolohow</a></p>
-            </div>
-            <div class="profile">
-                <img style="width: 150px; border-radius: 50%" src="/profile.jpg"/>
-            </div>
-        </div>
+  ul > li > ul {
+    margin-bottom: 27px;
+    margin-top: 5px;
+    list-style-type: circle;
+    margin-left: 20px;
+    font-size: 0.9em;
+  }
+
+  li p {
+    margin: 0;
+  }
+
+  .experience-subtitle {
+    color: gray;
+  }
+
+  @media print {
+    body {
+      margin: 0.5in;
+    }
+
+    h1 {
+      color: #000;
+    }
+
+    h2 {
+      color: #000;
+    }
+
+    #export-button {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+  <button id="export-button">Export to PDF</button>
+  <header>
+    <div>
+      <h1>Łukasz Żarnowiecki</h1>
+      <div class="contact-info">
+        <p>
+        <i class="fas fa-envelope"></i> <a href="mailto:lukasz@zarnowiecki.pl">lukasz@zarnowiecki.pl</a>
+        </p>
+        <p>
+        <i class="fas fa-phone"></i> <a href="tel:+48787306247">+48 787 306 247</a>
+        </p>
+        <a href="https://github.com/dolohow" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/dolohow" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
     </div>
+    <img src="/profile.jpg" alt="Łukasz Żarnowiecki" width="150" height="150">
+  </header>
 
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>DevOps & Python Developer</strong>
+        <p class="experience-subtitle">Institute of Biotechnology and Molecular Medicine | 2023 July &mdash; current</p>
+        <ul>
+          <li>Setting up Kubernetes cluster</li>
+          <li>Managing GitLab Instance</li>
+          <li>GitLab CI/CD for projects</li>
+          <li>Writing API code in FastAPI</li>
+          <li>Architecting API, workers and AI model to work together in scalable way (s3 events and redis as queue)</li>
+          <li>Providing guidance and code review</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Software Architect & DevOps</strong>
+        <p class="experience-subtitle">OSKAR Sp. z o.o. | 2021 November &mdash; current</p>
+        <ul>
+          <li>Designing cloud native application targeting AWS</li>
+          <li>Providing developers implementation guidelines in form of flow charts, UML and diagrams</li>
+          <li>Deploying and maintaining infrastructure on AWS</li>
+          <li>Writing some Python code</li>
+          <li>Gathering business requirements and forging it into technical requirements </li>
+          <li>Implementing CI & CD pipelines</li>
+          <li>Creating and maintaining on-premises k8s cluster (k3s)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>DevOps and Software Developer</strong>
+        <p class="experience-subtitle">Self-employed/freelancing | 2020 August &mdash; current</p>
+        <ul>
+          <li>Creating private cloud infrastructure</li>
+          <li>Migrating client from per customer virtual machine to kubernetes cluster, saving money and time (full gitops)</li>
+          <li>Server administration (deploying apps, monitoring, dealing with network issues)</li>
+          <li>SPA Blog based on React and GraphQL, SEO optimized (<a href=https://github.com/dolohow/polishline">github.com/dolohow/polishline</a>)</li>
+          <li>Maintaining Ultra Kernel Same Page Mergin (<a href="https://github.com/dolohow/uksm">github.com/dolohow/uksm</a>)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Technical Interviewer</strong>
+        <p class="experience-subtitle">DevsData LLC | 2020 October &mdash; 2023 September</p>
+        <ul>
+          <li>Interviewing Python, Go, JavaScript and SQL developers from junior to senior</li>
+          <li>Assessing theoretical and practical knowledge</li>
+          <li>Assessing psychological traits</li>
+          <li>Providing extensive feedback about candidate</li>
+        </ul>
+      </li>
+      <li>
+        <strong>AWS Technical Lead</strong>
+        <p class="experience-subtitle">SoftServe | 2022 May &mdash; 2023 April</p>
+        <ul>
+          <li>Mentoring</li>
+          <li>Conducting technical interviews</li>
+          <li>Leading software development team</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Principal Software Developer</strong>
+        <p class="experience-subtitle">Grand Parade, Cracow | 2017 August &mdash; 2018 October</p>
+        <ul>
+          <li>Working on project transition from Tel Aviv to Kraków. Minor features and bugfixes</li>
+          <li>Working in React core components team and providing common tools for other teams</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Software Architect</strong>
+        <p class="experience-subtitle">NFDI Cracow | 2016 September &mdash; 2017 July</p>
+        <ul>
+          <li>Working tightly with client to meet requirements and further design specific solution that meets business criteria and timelines during whole project lifecycle</li>
+          <li>Closely cooperating with iOS team to develop the best possible API interface and to explain correct usage along with pitfalls</li>
+          <li>Designing and writing API for iOS application Soopa in Django Rest Framework (Django, elasticsearch, postgres)</li>
+          <li>Designing and writing asynchronous update layer</li>
+          <li>Providing very flexible and extensible tools for automatic data migrations</li>
+          <li>Writing administration panel in Django</li>
+          <li>Writing image upload server in flask</li>
+          <li>Designing and executing server infrastructure with Ansible playbooks along with application deployments (haproxy, nginx, postgres, elasticsearch)</li>
+          <li>Securing servers infrastructure and applications by designing and aplying very strict ACL on every layer</li>
+          <li>Setting up monitoring, PITR backups and logs processing for having insight into production server infrastructure, and for tracking application behaviour</li>
+          <li>Creating CI infrastructure</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Backend System Developer</strong>
+        <p class="experience-subtitle">Alior Bank S.A., Cracow | 2016 January &mdash; September</p>
+        <ul>
+          <li>Designing and implementing modular monitoring application in Python integrated with</li>
+          <li>Nagios from scratch with high percentage coverage of unit tests</li>
+          <li>Writing C/C++ application that operates on high volume data</li>
+          <li>Writing Java application for processing files and manipulating data in database</li>
+          <li>Rewriting IPC library in C on Linux</li>
+          <li>Writing multithreaded C++ IPC client</li>
+          <li>Providing UML diagrams</li>
+          <li>Writing technical documentation and How-To's</li>
+          <li>Assisting on system migrations</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Software Developer</strong>
+        <p class="experience-subtitle">Neo9 Polska, Cracow | 2015 April &mdash; October</p>
+        <ul>
+          <li>Creating Single Page Application with AngularJS</li>
+          <li>Creating backend application with Node.js that exposes REST API to web application with high test coverage</li>
+          <li>Creating programming and testing environments</li>
+          <li>Writing unit and integration tests</li>
+          <li>Writing Docker scripts for applications</li>
+          <li>Creating backend application in Go that exposes REST API to web application with high test coverage (<a href="https://github.com/dolohow/PhotoSaloon-backend">github.com/dolohow/PhotoSaloon-backend</a>)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Intern</strong>
+        <p class="experience-subtitle">Pegasystems, Cracow | 2014 July &mdash; September</p>
+        <ul>
+          <li>Creating simple HTML5 app in AngularJS for mobile devices</li>
+          <li>Creating performance tests with tools for processing them and integrating into Jenkins CI server for discovering regressions</li>
+          <li>Creating testing environment for Windows Phone 8</li>
+          <li>Fixing bugs in Windows Phone 8 apps</li>
+          <li>Small tasks for Android</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Servers Administrator</strong>
+        <p class="experience-subtitle">WooX | 2010 &mdash; 2015</p>
+        <ul>
+          <li>New servers installation</li>
+          <li>Building scalable infrastructure</li>
+          <li>Creating virtualized instances of GNU/Linux with qemu/kvm</li>
+          <li>Keeping existing infrastructure up-date and working</li>
+          <li>Scripting in Python and shell</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
-    <h1>Education</h1>
-    <div class="item">
-        <div class="year">2012-2016</div>
-        <div class="description">
-            <b>AGH University of Science and Technology</b>, <i>Bachelor of Science (BSc)</i>,
-            Electronics and Telecommunication (in English), Cracow, Poland
-            <p>Thesis: Implementation of framework to communicate in REST architecture. Reference
-            implementations written in Go. (<a href="https://github.com/dolohow/thesis">https://github.com/dolohow/thesis</a>)</p>
-        </div>
-    </div>
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <p><strong>AGH University of Science and Technology</strong></p>
+        <p>Electronics and Telecommunication (in English) | Bachelor of Science (BSc) | 2016</p>
+      </li>
+    </ul>
+  </section>
 
-    <h1>Languages</h1>
-    <div class="item">
-        <div class="year">English</div>
-        <div class="description">
-            C1
-        </div>
-    </div>
-
-    <h1>Expieriences</h1>
-    <div class="item">
-        <div class="year">2022 May-current</div>
-        <div class="description">
-            <b>AWS Technical Lead</b>, <i>SoftServe</i>, Remote
-            <ul>
-                <li>Mentoring</li>
-                <li>Conducting technical interviews</li>
-                <li>Leading software development team</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2021 November-current</div>
-        <div class="description">
-            <b>Software Architect & DevOps</b>, <i>Biuro Podróży OSKAR Sp. z o.o.</i>, Remote
-            <ul>
-                <li>Designing cloud native application targeting AWS</li>
-                <li>Providing developers implementation guidelines in form of flow charts, UML and diagrams</li>
-                <li>Deploying and maintaining infrastructure on AWS</li>
-                <li>Gathering business requirements and forging it into technical requirements</li>
-                <li>Implementing CI & CD pipelines</li>
-                <li>Creating and maintaining on-premises k8s cluster (k3s)</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2020 August–current</div>
-        <div class="description">
-            <b>DevOps and Software Developer</b>, <i>Self-employed</i>, Remote
-            <ul>
-                <li>Creating private cloud infrastructure</li>
-                <li>Server administration (deploying apps, monitoring, dealing with network issues)</li>
-                <li>SPA Blog based on React and GraphQL, SEO optimized (<a href="https://github.com/dolohow/polishline">https://github.com/dolohow/polishline</a>)</li>
-                <li>Maintaining Ultra Kernel Same Page Mergin (<a href="https://github.com/dolohow/uksm">https://github.com/dolohow/uksm</a>)</li>
-                <li>Developing application for claiming inherited properties in USA (Node.js, Vue.js, PostgreSQL)</li>
-                <li>Setting up websites for small bussinesses</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2020 October–2022 October</div>
-        <div class="description">
-            <b>Technical Interviewer</b>, <i>DevsData LLC</i>, Remote
-            <ul>
-                <li>Interviewing Python, Go and SQL developers from junior to senior</li>
-                <li>Assessing theoretical and practical knowledge</li>
-                <li>Assessing psychological traits</li>
-                <li>Providing extensive feedback about candidate</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2017 August–2018 October</div>
-        <div class="description">
-            <b>Principal Software Developer</b>, <i>Grand Parade</i>, Kraków
-            <ul>
-                <li>Working on project transition from Tel Aviv to Kraków. Minor features and bugfixes</li>
-                <li>Working in React core components team and providing common tools for other teams</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2016 September–2017 July</div>
-        <div class="description">
-            <b>Software Architect</b>, <i>NFDI: Next Frontier Digital Investments</i>, Kraków
-            <ul>
-                <li>Working tightly with client to meet requirements and further design specific solution that meets business criteria and timelines during whole project lifecycle</li>
-                <li>Closely cooperating with iOS team to develop the best possible API interface and to explain correct usage along with pitfalls</li>
-                <li>Designing and writing API for iOS application Soopa in Django Rest Framework (Django, elasticsearch, postgres)</li>
-                <li>Designing and writing asynchronous update layer</li>
-                <li>Providing very flexible and extensible tools for automatic data migrations</li>
-                <li>Writing administration panel in Django</li>
-                <li>Writing image upload server in flask</li>
-                <li>Designing and executing server infrastructure with Ansible playbooks along with application deployments (haproxy, nginx, postgres, elasticsearch)</li>
-                <li>Securing servers infrastructure and applications by designing and aplying very strict ACL on every layer</li>
-                <li>Setting up monitoring, PITR backups and logs processing for having insight into production server infrastructure, and for tracking application behaviour</li>
-                <li>Creating CI infrastructure</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2016 January–September</div>
-        <div class="description">
-            <b>Backend System Developer</b>, <i>Alior Bank S.A.</i>, Kraków
-            <ul>
-                <li>Designing and implementing modular monitoring application in Python integrated with</li>
-                <li>Nagios from scratch with high percentage coverage of unit tests</li>
-                <li>Writing C/C++ application that operates on high volume data</li>
-                <li>Writing Java application for processing files and manipulating data in database</li>
-                <li>Rewriting IPC library in C on Linux</li>
-                <li>Writing multithreaded C++ IPC client</li>
-                <li>Providing UML diagrams</li>
-                <li>Writing technical documentation and How-To's</li>
-                <li>Assisting on system migrations</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2015 April–October</div>
-        <div class="description">
-            <b>Software Developer</b>, <i>Neo9 Polska</i>, Kraków
-            <ul>
-                <li>Creating Single Page Application with AngularJS</li>
-                <li>Creating backend application with Node.js that exposes REST API to web application with high test coverage</li>
-                <li>Creating programming and testing environments</li>
-                <li>Writing unit and integration tests</li>
-                <li>Writing Docker scripts for applications</li>
-                <li>Creating backend application in Go that exposes REST API to web application with high test coverage (<a href="https://github.com/dolohow/PhotoSaloon-backend">https://github.com/dolohow/PhotoSaloon-backend</a>)</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2014 July–September</div>
-        <div class="description">
-            <b>Intern</b>, <i>Pegasystems</i>, Kraków
-            <ul>
-                <li>Creating simple HTML5 app in AngularJS for mobile devices</li>
-                <li>Creating performance tests with tools for processing them and integrating into Jenkins CI server for discovering regressions</li>
-                <li>Creating testing environment for Windows Phone 8</li>
-                <li>Fixing bugs in Windows Phone 8 apps</li>
-                <li>Small tasks for Android</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <div class="year">2010-2015</div>
-        <div class="description">
-            <b>Servers Administrator</b>, <i>PHU WooX</i>, Remote
-            <ul>
-                <li>New servers installation</li>
-                <li>Building scalable infrastructure</li>
-                <li>Creating virtualized instances of GNU/Linux with qemu/kvm</li>
-                <li>Keeping existing infrastructure up-date and working</li>
-                <li>Scripting in Python and shell</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-cv">
-        I hereby agree for processing the following personal information strictly for the purposes of job recruitment in accordance with
-the regulation for the protection of personal data passed on the following day: 29.08.97r. DzU nr 133 poz. 883.
-    </div>
-</div>
+  <!-- Add more sections for skills, projects, etc. -->
+  <footer>
+    <p>
+    I hereby agree for processing the following personal information strictly for the purposes of job recruitment
+    in accordance with the regulation for the protection of personal data passed on the following day: 29.08.97r.
+    DzU nr 133 poz. 883.
+    </p>
+  </footer>
+  <script>
+    document.getElementById('export-button').addEventListener('click', function() {
+      window.print();
+    });
+  </script>
+</body>
+</html>
