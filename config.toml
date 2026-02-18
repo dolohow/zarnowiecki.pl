@@ -5,6 +5,8 @@ theme = "hugo-theme-console"
 
 [params]
 description = "Personal blog"
+titleCutting = true
+animateStyle = "animated zoomIn fast"
 
 # https://utteranc.es
 [params.ghcomments]
