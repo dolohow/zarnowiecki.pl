@@ -23,3 +23,6 @@ url = "hire-me/"
 [[params.navlinks]]
 name = "About/"
 url = "about/"
+
+[pagination]
+pagerSize = 5
