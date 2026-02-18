@@ -108,11 +108,9 @@ type: "raw"
     <div>
       <h1>Łukasz Żarnowiecki</h1>
       <div class="contact-info">
-        <p>
-        <i class="fas fa-envelope"></i> <a href="mailto:lukasz@zarnowiecki.pl">lukasz@zarnowiecki.pl</a>
-        </p>
-        <p>
-        <i class="fas fa-phone"></i> <a href="tel:+48787306247">+48 787 306 247</a>
+        <p id="contact-reveal-wrap">
+          <button type="button" id="contact-reveal-btn" aria-label="Show email and phone">Show contact (email &amp; phone)</button>
+          <span id="contact-reveal-target" aria-live="polite"></span>
         </p>
         <a href="https://github.com/dolohow" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> GitHub
@@ -303,6 +301,16 @@ type: "raw"
     document.getElementById('export-button').addEventListener('click', function() {
       window.print();
     });
+
+    (function () {
+      const btn = document.getElementById('contact-reveal-btn');
+      const target = document.getElementById('contact-reveal-target');
+      btn.addEventListener('click', () => {
+        const local = 'lukasz', domain = 'zarnowiecki.pl', num = '+48' + ' 787 306 247';
+        target.innerHTML = '<br><i class="fas fa-envelope"></i> <a href="mailto:' + local + '@' + domain + '">' + local + '@' + domain + '</a><br><i class="fas fa-phone"></i> <a href="tel:' + num.replace(/\s/g, '') + '">' + num + '</a>';
+        btn.remove();
+      });
+    })();
   </script>
 </body>
 </html>
