@@ -28,3 +28,6 @@ url = "about/"
 
 [pagination]
 pagerSize = 5
+
+[security]
+allowContent = ['.*']

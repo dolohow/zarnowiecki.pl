@@ -35,21 +35,41 @@ Thinks I am best with:
     * monitoring
     * security
     * traffic shaping
+  * OS:
+    * Arch
+    * Debian
+    * NixOS
+    * RHEL
+    * Ubuntu
   * Clouds
     * AWS
       * CloudFront
+      * CloudWatch
+      * DynamoDB
+      * EC2
+      * ECR
       * ECS
-      * Elastic Load Balancer
+      * ELB
       * EventBridge
       * IAM
+      * KMS
+      * Lambda
+      * RDS
+      * Route 53
+      * S3
+      * SecretsManager
+      * SES
       * VPC
       * ...and more
   * Databases:
+    * MongoDB
     * MySQL / MariaDB
     * PostgreSQL
+    * Redis
   * Software
     * Ansible
     * Apache
     * Docker / Podman
     * Netdata
     * Nginx
+    * Terraform
